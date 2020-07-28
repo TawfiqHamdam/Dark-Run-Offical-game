@@ -11,6 +11,7 @@ public class CameraFlollower : MonoBehaviour
     void LateUpdate()
     {
         Vector3 WantPos = Taget.position + offset;
+        Vector3 SmothedPos = Vector3.Lerp(transform.position);
         transform.position = WantPos;
     }
 }
