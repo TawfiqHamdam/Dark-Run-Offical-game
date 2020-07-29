@@ -3,15 +3,17 @@
 public class CameraFlollower : MonoBehaviour
 {
 
-    [SerializeField] Transform Taget;
+    [SerializeField] Transform Target;
     [SerializeField] Vector3 offset;
 
     [SerializeField] float SmothTime = 0.25f;
 
-    void LateUpdate()
+    void FixedUpdate()
     {
-        Vector3 WantPos = Taget.position + offset;
-        Vector3 SmothedPos = Vector3.Lerp(transform.position);
-        transform.position = WantPos;
+        Vector3 WantPos = Target.position + offset;
+        Vector3 SmothedPos = Vector3.Lerp(transform.position, WantPos, SmothTime);
+        transform.position = SmothedPos;
+
+        transform.LookAt(Target);
     }
 }

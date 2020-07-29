@@ -4,6 +4,7 @@ using UnityStandardAssets.CrossPlatformInput;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] float XPos;
+    [SerializeField] float NXPos;
     [SerializeField] float controllSpeed = 7.85f;
     [SerializeField] float JumpH = 4;
     [SerializeField] float JumpForse = 2.5f;
@@ -62,7 +63,7 @@ public class PlayerController : MonoBehaviour
         float XOffset = Sideways * controllSpeed * Time.deltaTime;
 
         float rawPosx = transform.localPosition.x + XOffset;
-        float OffsetByX = Mathf.Clamp(rawPosx, -XPos, XPos);
+        float OffsetByX = Mathf.Clamp(rawPosx, NXPos, XPos);
 
         transform.localPosition = new Vector3(OffsetByX, transform.localPosition.y, transform.localPosition.z);
     }
