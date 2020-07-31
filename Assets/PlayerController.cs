@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour
         Rigg = GetComponent<Rigidbody>();
     }
 
-    void FixedUpdate()
+    void Update()
     {
         if (IsMoveing)
         {
