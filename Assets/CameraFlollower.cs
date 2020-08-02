@@ -1,3 +1,4 @@
+﻿using UnityEngine;
 
 public class CameraFlollower : MonoBehaviour
 {
@@ -7,7 +8,7 @@ public class CameraFlollower : MonoBehaviour
 
     [SerializeField] float SmothTime = 0.25f;
 
-    void FixedUpdate()
+    void Update()
     {
         Vector3 WantPos = Target.position + offset;
         Vector3 SmothedPos = Vector3.Lerp(transform.position, WantPos, SmothTime);
