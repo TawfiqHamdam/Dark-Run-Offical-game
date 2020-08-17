@@ -4,11 +4,16 @@ using UnityEngine;
 
 public class MovementDetection : MonoBehaviour
 {
-    // Start is called before the first frame update
-    public float angleIncreasespeed = (2 * Mathf.PI) / 5; 
-    public float radius = 5f; //radius of the circle's movement
-    public float viewRadius = 10f;
-    public float detectionAngle = 10f;
+    public int maxHealth = 100;
+    public int currentHealth;
+    private int dammge;/*so the enemy choses how much damge the 
+    player gets like a strong enemy does more damge*/
+
+    [SerializeField] HealthBar healthbar;
+    [SerializeField] float angleIncreasespeed = (2 * Mathf.PI) / 5;
+    [SerializeField] float radius = 5f; //radius of the circle's movement
+    [SerializeField] float viewRadius = 10f;
+    [SerializeField] float detectionAngle = 10f;
     float angle;
     float x;
     float z;
@@ -20,6 +25,9 @@ public class MovementDetection : MonoBehaviour
     float multiplier = -1;
     void Start()
     {
+        currentHealth = maxHealth;
+        healthbar.SetMaxHealth(maxHealth);
+
         angle = 0f;// transform.rotation.eulerAngles.y;// * 180 / Mathf.PI;
         transform.position = new Vector3(transform.position.x + radius, transform.position.y, transform.position.z);
         startingX = transform.position.x;
@@ -37,18 +45,11 @@ public class MovementDetection : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
         //float currentRotationAngle = transform.rotation.eulerAngles.y;
         movement();
         detection();
-        
-
-    }
-    private void FixedUpdate()
-    {
-        
     }
 
     void movement()
@@ -92,21 +93,21 @@ public class MovementDetection : MonoBehaviour
         }
 
 
-        //if((multiplier > 0 && randomAngleToMove - angle >0 0)|| (multiplier < 0 && randomAngleToMove - angle < 0))
-        //{
+        /*if((multiplier > 0 && randomAngleToMove - angle >0 0)|| (multiplier < 0 && randomAngleToMove - angle < 0))
+        {
 
-        //    randomAngleToMove = Random.Range(0.01, 2 * Mathf.PI); //new random point
+            randomAngleToMove = Random.Range(0.01, 2 * Mathf.PI); //new random point
 
-        //}
+        }
 
-        //if (randomAngleToMove > Mathf.PI)
-        //{
-        //    multiplier = 1;
-        //}
-        //else
-        //{
-        //    multiplier = -1;
-        //}
+        if (randomAngleToMove > Mathf.PI)
+        {
+            multiplier = 1;
+        }
+        else
+        {
+            multiplier = -1;
+        }*/
     }
 
     void detection()
@@ -115,11 +116,11 @@ public class MovementDetection : MonoBehaviour
         if((player.transform.position - transform.position).magnitude < viewRadius)
         {
             Vector3 currentDirection = transform.position - transform.forward;
-            //print(currentDirection);
-            //print(transform.position);
-            //print("angle: " + Mathf.Abs(Vector3.Angle(currentDirection - transform.position, player.transform.position - transform.position)));
-            //print("detection angle: " + (detectionAngle / 2));
-            //print(Mathf.Abs(Vector3.Angle(currentDirection, player.transform.position)) <= (detectionAngle / 2));
+            /*print(currentDirection);
+            print(transform.position);
+            print("angle: " + Mathf.Abs(Vector3.Angle(currentDirection - transform.position, player.transform.position - transform.position)));
+            print("detection angle: " + (detectionAngle / 2));
+            print(Mathf.Abs(Vector3.Angle(currentDirection, player.transform.position)) <= (detectionAngle / 2));*/
             if (Mathf.Abs(Vector3.Angle(currentDirection - transform.position, player.transform.position - transform.position))<= (detectionAngle / 2))
             {
                 RaycastHit target;
@@ -127,13 +128,24 @@ public class MovementDetection : MonoBehaviour
                 {
                     if (target.collider != null)
                     {
+                        //may have to change later because of the use of tags
                         if (target.transform.tag == "Player")
                         {
-                            print("DETECTED");
+                            Attack();
                         }
                     }
                 }
             }
         }
+    }
+    void Attack()
+    {
+        TakeDammge(5);
+    }
+
+    void TakeDammge(int dammge)//gets called by a messege from the enemy
+    {
+        currentHealth -= dammge;
+        healthbar.SetHealth(currentHealth);
     }
 }
