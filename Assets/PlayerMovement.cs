@@ -22,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
             Ray ray = cam.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
 
-            if (Physics.Raycast(ray, out hit, 1000, MovementMask))
+            if (Physics.Raycast(ray, out hit, 20, MovementMask))
             {
                 moter.MoveToPoint(hit.point);
             }
