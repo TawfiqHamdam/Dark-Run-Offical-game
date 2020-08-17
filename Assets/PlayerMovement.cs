@@ -1,12 +1,17 @@
 ﻿using UnityEngine;
+using UnityStandardAssets.CrossPlatformInput;
 
 [RequireComponent(typeof(PlayerMoter))]
 public class PlayerMovement : MonoBehaviour
 {
     public LayerMask MovementMask;
+    [SerializeField] float rotationSpeed = 10f;
+    [SerializeField] float controllSpeed = 20f;
 
     Camera cam;
     PlayerMoter moter;
+
+    float ZThrow, YThrow;
 
     void Start()
     {
@@ -17,16 +22,30 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (Input.GetMouseButtonDown(1))
-        {
-            Ray ray = cam.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
+        Movement();
 
-            if (Physics.Raycast(ray, out hit, 1000, MovementMask))
-            {
-                moter.MoveToPoint(hit.point);
-            }
-        }
     }
 
+    private void Movement()
+    {
+        if (CrossPlatformInputManager.GetButton("Horizontal"))
+        {
+            YThrow = CrossPlatformInputManager.GetAxis("Horizontal");
+
+            float YOffset = YThrow * rotationSpeed * Time.deltaTime;
+            
+            transform.Rotate(0, YOffset, 0);
+
+        if (CrossPlatformInputManager.GetButton("Vertical"))
+        {
+            ZThrow = CrossPlatformInputManager.GetAxis("Vertical");
+            float zOffset = ZThrow * controllSpeed * Time.deltaTime;
+
+            float rawPosZ = transform.localPosition.z + zOffset;
+
+            Vector3 zVectorOffset = ZThrow * transform.forward;
+
+            transform.localPosition = transform.localPosition + zVectorOffset;
+        }
+    }
 }
