@@ -5,8 +5,8 @@ using UnityStandardAssets.CrossPlatformInput;
 public class PlayerMovement : MonoBehaviour
 {
     public LayerMask MovementMask;
-    [SerializeField] float rotationSpeed = 1f;
-    [SerializeField] float controllSpeed = 2f;
+    [SerializeField] float rotationSpeed = 10f;
+    [SerializeField] float controllSpeed = 20f;
 
     Camera cam;
     PlayerMoter moter;
@@ -32,16 +32,14 @@ public class PlayerMovement : MonoBehaviour
         {
             YThrow = CrossPlatformInputManager.GetAxis("Horizontal");
 
-            float YOffset = YThrow * rotationSpeed;// * Time.deltaTime;
-
+            float YOffset = YThrow * rotationSpeed * Time.deltaTime;
+            
             transform.Rotate(0, YOffset, 0);
 
-
-        }
         if (CrossPlatformInputManager.GetButton("Vertical"))
         {
             ZThrow = CrossPlatformInputManager.GetAxis("Vertical");
-            float zOffset = ZThrow * controllSpeed;// * Time.deltaTime;
+            float zOffset = ZThrow * controllSpeed * Time.deltaTime;
 
             float rawPosZ = transform.localPosition.z + zOffset;
 
