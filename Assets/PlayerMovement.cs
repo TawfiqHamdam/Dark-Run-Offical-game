@@ -40,6 +40,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 ZThrow = CrossPlatformInputManager.GetAxis("Vertical");
                 float zOffset = ZThrow * controllSpeed * Time.deltaTime;
+<<<<<<< HEAD
         }
 
         if (CrossPlatformInputManager.GetButton("Vertical"))
