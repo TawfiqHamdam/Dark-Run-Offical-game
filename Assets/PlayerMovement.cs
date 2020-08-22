@@ -38,12 +38,15 @@ public class PlayerMovement : MonoBehaviour
 <<<<<<< HEAD
 =======
 
+<<<<<<< HEAD
+>>>>>>> parent of 16f1bdb... Fixed some movement bugs
 =======
 >>>>>>> parent of 16f1bdb... Fixed some movement bugs
             if (CrossPlatformInputManager.GetButton("Vertical"))
             {
                 ZThrow = CrossPlatformInputManager.GetAxis("Vertical");
                 float zOffset = ZThrow * controllSpeed * Time.deltaTime;
+<<<<<<< HEAD
 <<<<<<< HEAD
         }
 
@@ -60,7 +63,13 @@ public class PlayerMovement : MonoBehaviour
 >>>>>>> parent of 16f1bdb... Fixed some movement bugs
                 Vector3 zVectorOffset = ZThrow * transform.forward;
 
+=======
+
+                float rawPosZ = transform.localPosition.z + zOffset;
+
                 Vector3 zVectorOffset = ZThrow * transform.forward;
+
+>>>>>>> parent of 16f1bdb... Fixed some movement bugs
                 transform.localPosition = transform.localPosition + zVectorOffset;
             }
         }
