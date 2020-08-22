@@ -40,6 +40,9 @@ public class PlayerMovement : MonoBehaviour
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 16f1bdb... Fixed some movement bugs
 =======
 >>>>>>> parent of 16f1bdb... Fixed some movement bugs
 =======
@@ -53,6 +56,7 @@ public class PlayerMovement : MonoBehaviour
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         }
 
@@ -61,6 +65,8 @@ public class PlayerMovement : MonoBehaviour
             ZThrow = CrossPlatformInputManager.GetAxis("Vertical");
             float zOffset = ZThrow * controllSpeed * Time.deltaTime;
 >>>>>>> 16f1bdb2d08fc4769d0bfe0db7b5d1e48eea4f3a
+=======
+>>>>>>> parent of 16f1bdb... Fixed some movement bugs
 =======
 >>>>>>> parent of 16f1bdb... Fixed some movement bugs
 =======
