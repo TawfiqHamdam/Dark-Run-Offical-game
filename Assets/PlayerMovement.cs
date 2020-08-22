@@ -59,6 +59,7 @@ public class PlayerMovement : MonoBehaviour
 >>>>>>> parent of 16f1bdb... Fixed some movement bugs
                 Vector3 zVectorOffset = ZThrow * transform.forward;
 
+                Vector3 zVectorOffset = ZThrow * transform.forward;
                 transform.localPosition = transform.localPosition + zVectorOffset;
             }
         }
