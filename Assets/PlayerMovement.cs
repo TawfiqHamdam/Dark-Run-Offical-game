@@ -35,7 +35,9 @@ public class PlayerMovement : MonoBehaviour
             float YOffset = YThrow * rotationSpeed * Time.deltaTime;
 
             transform.Rotate(0, YOffset, 0);
+=======
 
+>>>>>>> parent of 16f1bdb... Fixed some movement bugs
             if (CrossPlatformInputManager.GetButton("Vertical"))
             {
                 ZThrow = CrossPlatformInputManager.GetAxis("Vertical");
