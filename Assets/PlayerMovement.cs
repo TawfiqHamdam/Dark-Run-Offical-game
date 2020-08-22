@@ -35,6 +35,7 @@ public class PlayerMovement : MonoBehaviour
             float YOffset = YThrow * rotationSpeed * Time.deltaTime;
 
             transform.Rotate(0, YOffset, 0);
+<<<<<<< HEAD
 =======
 
 >>>>>>> parent of 16f1bdb... Fixed some movement bugs
@@ -55,6 +56,7 @@ public class PlayerMovement : MonoBehaviour
 
                 float rawPosZ = transform.localPosition.z + zOffset;
 
+>>>>>>> parent of 16f1bdb... Fixed some movement bugs
                 Vector3 zVectorOffset = ZThrow * transform.forward;
 
                 transform.localPosition = transform.localPosition + zVectorOffset;
