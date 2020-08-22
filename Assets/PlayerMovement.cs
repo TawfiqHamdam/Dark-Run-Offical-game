@@ -35,23 +35,16 @@ public class PlayerMovement : MonoBehaviour
             float YOffset = YThrow * rotationSpeed * Time.deltaTime;
 
             transform.Rotate(0, YOffset, 0);
-            if (CrossPlatformInputManager.GetButton("Vertical"))
-            {
-                ZThrow = CrossPlatformInputManager.GetAxis("Vertical");
-                float zOffset = ZThrow * controllSpeed * Time.deltaTime;
-            }
+        }
+        if (CrossPlatformInputManager.GetButton("Vertical"))
+        {
+            ZThrow = CrossPlatformInputManager.GetAxis("Vertical");
+            float zOffset = ZThrow * controllSpeed * Time.deltaTime;
+            float rawPosZ = transform.localPosition.z + zOffset;
+            Vector3 zVectorOffset = rawPosZ * transform.forward;
 
-            if (CrossPlatformInputManager.GetButton("Vertical"))
-            {
-                ZThrow = CrossPlatformInputManager.GetAxis("Vertical");
-                float zOffset = ZThrow * controllSpeed * Time.deltaTime;
-                float rawPosZ = transform.localPosition.z + zOffset;
-                float rawPosZ = transform.localPosition.z + zOffset;
-                Vector3 zVectorOffset = ZThrow * transform.forward;
-                float rawPosZ = transform.localPosition.z + zOffset;
-                Vector3 zVectorOffset = ZThrow * transform.forward;
-                transform.localPosition = transform.localPosition + zVectorOffset;
-            }
+            transform.localPosition = transform.localPosition + zVectorOffset;
         }
     }
-}
+}// 
+//ok so, it was working fine like 1 hour ago when I tested it. What changed now?
