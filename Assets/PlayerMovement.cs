@@ -35,21 +35,32 @@ public class PlayerMovement : MonoBehaviour
             float YOffset = YThrow * rotationSpeed * Time.deltaTime;
 
             transform.Rotate(0, YOffset, 0);
+<<<<<<< HEAD
             if (CrossPlatformInputManager.GetButton("Vertical"))
             {
                 ZThrow = CrossPlatformInputManager.GetAxis("Vertical");
                 float zOffset = ZThrow * controllSpeed * Time.deltaTime;
             }
+=======
+>>>>>>> parent of 16f1bdb... Fixed some movement bugs
 
             if (CrossPlatformInputManager.GetButton("Vertical"))
             {
                 ZThrow = CrossPlatformInputManager.GetAxis("Vertical");
                 float zOffset = ZThrow * controllSpeed * Time.deltaTime;
+<<<<<<< HEAD
                 float rawPosZ = transform.localPosition.z + zOffset;
                 float rawPosZ = transform.localPosition.z + zOffset;
                 Vector3 zVectorOffset = ZThrow * transform.forward;
                 float rawPosZ = transform.localPosition.z + zOffset;
                 Vector3 zVectorOffset = ZThrow * transform.forward;
+=======
+
+                float rawPosZ = transform.localPosition.z + zOffset;
+
+                Vector3 zVectorOffset = ZThrow * transform.forward;
+
+>>>>>>> parent of 16f1bdb... Fixed some movement bugs
                 transform.localPosition = transform.localPosition + zVectorOffset;
             }
         }
