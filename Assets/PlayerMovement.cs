@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public LayerMask MovementMask;
     [SerializeField] float rotationSpeed = 10f;
-    [SerializeField] float controllSpeed = 20f;
+    [SerializeField] float controllSpeed = 1f;
 
     Camera cam;
     PlayerMoter moter;
@@ -23,28 +23,20 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
         Movement();
-
     }
 
     private void Movement()
     {
-        if (CrossPlatformInputManager.GetButton("Horizontal"))
-        {
-            YThrow = CrossPlatformInputManager.GetAxis("Horizontal");
-
-            float YOffset = YThrow * rotationSpeed * Time.deltaTime;
-
-            transform.Rotate(0, YOffset, 0);
-        }
         if (CrossPlatformInputManager.GetButton("Vertical"))
         {
             ZThrow = CrossPlatformInputManager.GetAxis("Vertical");
             float zOffset = ZThrow * controllSpeed * Time.deltaTime;
-            float rawPosZ = transform.localPosition.z + zOffset;
-            Vector3 zVectorOffset = rawPosZ * transform.forward;
-
+            //float rawPosZ = transform.localPosition.z + zOffset;
+            Vector3 zVectorOffset = zOffset * transform.forward;//this seems wrong. Just put zOffset here
+//let me try this it wont work
             transform.localPosition = transform.localPosition + zVectorOffset;
-        }
+        }//it works for me let me see
     }
-}// 
-//ok so, it was working fine like 1 hour ago when I tested it. What changed now?
+}// so lets fix the bugs right now i removed the virtical cause we dont need it
+//I would suggest to keep it until we fix the bugs. I will remove it later
+//I need to figure out why it suddenly became bugged okay ping me when you do
