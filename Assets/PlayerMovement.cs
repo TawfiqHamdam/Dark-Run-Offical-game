@@ -36,17 +36,18 @@ public class PlayerMovement : MonoBehaviour
 
             transform.Rotate(0, YOffset, 0);
 
-            if (CrossPlatformInputManager.GetButton("Vertical"))
-            {
-                ZThrow = CrossPlatformInputManager.GetAxis("Vertical");
-                float zOffset = ZThrow * controllSpeed * Time.deltaTime;
+        }
 
-                float rawPosZ = transform.localPosition.z + zOffset;
+        if (CrossPlatformInputManager.GetButton("Vertical"))
+        {
+            ZThrow = CrossPlatformInputManager.GetAxis("Vertical");
+            float zOffset = ZThrow * controllSpeed * Time.deltaTime;
 
-                Vector3 zVectorOffset = ZThrow * transform.forward;
+            float rawPosZ = transform.localPosition.z + zOffset;
 
-                transform.localPosition = transform.localPosition + zVectorOffset;
-            }
+            Vector3 zVectorOffset = ZThrow * transform.forward;
+
+            transform.localPosition = transform.localPosition + zVectorOffset;
         }
     }
 }
