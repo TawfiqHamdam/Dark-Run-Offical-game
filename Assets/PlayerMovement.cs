@@ -47,6 +47,9 @@ public class PlayerMovement : MonoBehaviour
             float zOffset = ZThrow * controllSpeed * Time.deltaTime;
                 float rawPosZ = transform.localPosition.z + zOffset;
 
+
+                float rawPosZ = transform.localPosition.z + zOffset;
+
                 Vector3 zVectorOffset = ZThrow * transform.forward;
 
                 transform.localPosition = transform.localPosition + zVectorOffset;
