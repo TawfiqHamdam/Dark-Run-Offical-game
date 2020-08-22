@@ -38,6 +38,7 @@ public class PlayerMovement : MonoBehaviour
 <<<<<<< HEAD
 =======
 
+=======
 >>>>>>> parent of 16f1bdb... Fixed some movement bugs
             if (CrossPlatformInputManager.GetButton("Vertical"))
             {
