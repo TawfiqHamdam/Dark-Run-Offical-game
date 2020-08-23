@@ -8,10 +8,13 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float rotationSpeed = 10f;
     [SerializeField] float controllSpeed = 1f;
 
+    [SerializeField] Transform rotationHelper;
+
     Camera cam;
     PlayerMoter moter;
 
-    float ZThrow, YThrow;
+    float ZThrow, YThrow, XThrow;
+    float xAxisClamp = 0;
 
     void Start()
     {
@@ -19,10 +22,16 @@ public class PlayerMovement : MonoBehaviour
         moter = GetComponent<PlayerMoter>();
     }
 
+    private void Update()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+    }
+
     // Update is called once per frame
     void FixedUpdate()
     {
         Movement();
+        Rotation();
     }
 
     private void Movement()
@@ -31,12 +40,50 @@ public class PlayerMovement : MonoBehaviour
         {
             ZThrow = CrossPlatformInputManager.GetAxis("Vertical");
             float zOffset = ZThrow * controllSpeed * Time.deltaTime;
-            //float rawPosZ = transform.localPosition.z + zOffset;
-            Vector3 zVectorOffset = zOffset * transform.forward;//this seems wrong. Just put zOffset here
-//let me try this it wont work
+            Vector3 zVectorOffset = zOffset * transform.forward;
             transform.localPosition = transform.localPosition + zVectorOffset;
-        }//it works for me let me see
+        }
+        else if (CrossPlatformInputManager.GetButton("Horizontal"))
+        {
+            XThrow = CrossPlatformInputManager.GetAxis("Horizontal");
+            float xOffser = XThrow * controllSpeed * Time.deltaTime;
+            Vector3 xVectorOffset = xOffser * transform.right;
+            transform.localPosition = transform.localPosition + xVectorOffset;
+
+        }
     }
-}// so lets fix the bugs right now i removed the virtical cause we dont need it
-//I would suggest to keep it until we fix the bugs. I will remove it later
-//I need to figure out why it suddenly became bugged okay ping me when you do
+
+    private void Rotation()
+    {
+        float mouseX = Input.GetAxis("Mouse X");
+        float mouseY = Input.GetAxis("Mouse Y");
+
+        float rotationX = mouseX * rotationSpeed;
+        float rotationY = mouseY * rotationSpeed;
+
+        xAxisClamp += rotationY;
+
+        Vector3 rotationVec = rotationHelper.transform.rotation.eulerAngles;
+        Vector3 rotationPlayer = transform.rotation.eulerAngles;
+
+        rotationVec.x -= rotationY;
+        //rotationVec.z = 0;
+        rotationVec.y += rotationX;
+        rotationPlayer.y += rotationX;
+        print(xAxisClamp);
+        print(rotationPlayer.x);
+        if(xAxisClamp > 90)
+        {
+            xAxisClamp = 90;
+            rotationVec.x = 270;
+        }
+        else if (xAxisClamp < -90)
+        {
+            xAxisClamp = -90;
+            rotationVec.x = 90;
+        }
+
+        transform.rotation = Quaternion.Euler(rotationPlayer);
+        rotationHelper.rotation = Quaternion.Euler(rotationVec);
+    }
+}
