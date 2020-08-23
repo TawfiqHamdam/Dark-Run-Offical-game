@@ -43,7 +43,7 @@ public class PlayerMovement : MonoBehaviour
             Vector3 zVectorOffset = zOffset * transform.forward;
             transform.localPosition = transform.localPosition + zVectorOffset;
         }
-        else if (CrossPlatformInputManager.GetButton("Horizontal"))
+        if (CrossPlatformInputManager.GetButton("Horizontal"))
         {
             XThrow = CrossPlatformInputManager.GetAxis("Horizontal");
             float xOffser = XThrow * controllSpeed * Time.deltaTime;
@@ -70,8 +70,8 @@ public class PlayerMovement : MonoBehaviour
         //rotationVec.z = 0;
         rotationVec.y += rotationX;
         rotationPlayer.y += rotationX;
-        print(xAxisClamp);
-        print(rotationPlayer.x);
+        //print(xAxisClamp);
+        //print(rotationPlayer.x);
         if(xAxisClamp > 90)
         {
             xAxisClamp = 90;
