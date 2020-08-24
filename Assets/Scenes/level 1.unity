@@ -254,8 +254,8 @@ MonoBehaviour:
   MovementMask:
     serializedVersion: 2
     m_Bits: 256
-  rotationSpeed: 2
-  controllSpeed: 10
+  rotationSpeed: 5
+  controllSpeed: 20
   rotationHelper: {fileID: 2101088417}
 --- !u!195 &68125420
 NavMeshAgent:
