@@ -6,7 +6,7 @@ using UnityEngine;
 public class QuickStartRoomController : MonoBehaviourPunCallbacks
 {
     [SerializeField]
-    private int multiplayerSceneIndex = 1; //Number for the build index to the multiplay scene
+    private int firstLevelScene = 1; //Number for the build index to the multiplay scene
 
     public override void OnEnable()
     {
@@ -27,7 +27,7 @@ public class QuickStartRoomController : MonoBehaviourPunCallbacks
         if (PhotonNetwork.IsMasterClient)
         {
             Debug.Log("starting game");
-            PhotonNetwork.LoadLevel(multiplayerSceneIndex);
+            PhotonNetwork.LoadLevel(firstLevelScene);
         }
     }
     void Start()
