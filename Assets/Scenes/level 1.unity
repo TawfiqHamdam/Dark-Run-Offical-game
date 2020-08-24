@@ -256,6 +256,7 @@ MonoBehaviour:
     m_Bits: 256
   rotationSpeed: 2
   controllSpeed: 10
+  ShiftSpeed: 20
   rotationHelper: {fileID: 2101088417}
 --- !u!195 &68125420
 NavMeshAgent:

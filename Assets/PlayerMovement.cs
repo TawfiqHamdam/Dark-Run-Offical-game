@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask MovementMask;
     [SerializeField] float rotationSpeed = 10f;
     [SerializeField] float controllSpeed = 1f;
+    [SerializeField] float ShiftSpeed = 15f;
 
     [SerializeField] Transform rotationHelper;
 
@@ -36,6 +37,14 @@ public class PlayerMovement : MonoBehaviour
 
     private void Movement()
     {
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            controllSpeed = ShiftSpeed;
+        }
+        else
+        {
+            controllSpeed = 10;
+        }
         if (CrossPlatformInputManager.GetButton("Vertical"))
         {
             ZThrow = CrossPlatformInputManager.GetAxis("Vertical");
