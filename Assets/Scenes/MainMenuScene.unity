@@ -508,6 +508,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1587409645526546242, guid: 3d7934d346a8b444fa12107d4cf745e3, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1587409645526546242, guid: 3d7934d346a8b444fa12107d4cf745e3, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1587409645526546242, guid: 3d7934d346a8b444fa12107d4cf745e3, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1587409645526546243, guid: 3d7934d346a8b444fa12107d4cf745e3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -564,6 +576,50 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 1587409645630075167, guid: 3d7934d346a8b444fa12107d4cf745e3, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1587409645630075167, guid: 3d7934d346a8b444fa12107d4cf745e3, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1587409645630075167, guid: 3d7934d346a8b444fa12107d4cf745e3, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1587409645924225525, guid: 3d7934d346a8b444fa12107d4cf745e3, type: 3}
+      propertyPath: m_Text
+      value: Start
+      objectReference: {fileID: 0}
+    - target: {fileID: 1587409645924225525, guid: 3d7934d346a8b444fa12107d4cf745e3, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 954746d370bc8934299c8c8267543f4f, type: 3}
+    - target: {fileID: 1587409645924225525, guid: 3d7934d346a8b444fa12107d4cf745e3, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1587409645924225525, guid: 3d7934d346a8b444fa12107d4cf745e3, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1587409645924225525, guid: 3d7934d346a8b444fa12107d4cf745e3, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1587409645988660483, guid: 3d7934d346a8b444fa12107d4cf745e3, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1587409645988660483, guid: 3d7934d346a8b444fa12107d4cf745e3, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1587409645988660483, guid: 3d7934d346a8b444fa12107d4cf745e3, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1587409645988660492, guid: 3d7934d346a8b444fa12107d4cf745e3, type: 3}
       propertyPath: m_Interactable
       value: 0
@@ -572,6 +628,48 @@ PrefabInstance:
       propertyPath: m_TargetGraphic
       value: 
       objectReference: {fileID: 1481094375}
+    - target: {fileID: 1587409645999425993, guid: 3d7934d346a8b444fa12107d4cf745e3, type: 3}
+      propertyPath: m_Text
+      value: 'Cancel
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1587409645999425993, guid: 3d7934d346a8b444fa12107d4cf745e3, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 954746d370bc8934299c8c8267543f4f, type: 3}
+    - target: {fileID: 1587409645999425993, guid: 3d7934d346a8b444fa12107d4cf745e3, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1587409645999425993, guid: 3d7934d346a8b444fa12107d4cf745e3, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1587409645999425993, guid: 3d7934d346a8b444fa12107d4cf745e3, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1587409647412618935, guid: 3d7934d346a8b444fa12107d4cf745e3, type: 3}
+      propertyPath: m_Text
+      value: Loading
+      objectReference: {fileID: 0}
+    - target: {fileID: 1587409647412618935, guid: 3d7934d346a8b444fa12107d4cf745e3, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 954746d370bc8934299c8c8267543f4f, type: 3}
+    - target: {fileID: 1587409647412618935, guid: 3d7934d346a8b444fa12107d4cf745e3, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1587409647412618935, guid: 3d7934d346a8b444fa12107d4cf745e3, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1587409647412618935, guid: 3d7934d346a8b444fa12107d4cf745e3, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1587409647580670585, guid: 3d7934d346a8b444fa12107d4cf745e3, type: 3}
       propertyPath: m_Name
       value: MainMenu
@@ -719,6 +817,14 @@ PrefabInstance:
       objectReference: {fileID: 1354273372}
     - target: {fileID: 2892871109823115544, guid: 18a91b1d65080074395c6f9eaec24461, type: 3}
       propertyPath: _quickCancelButton
+      value: 
+      objectReference: {fileID: 470825836}
+    - target: {fileID: 2892871109823115544, guid: 18a91b1d65080074395c6f9eaec24461, type: 3}
+      propertyPath: quickStartButton
+      value: 
+      objectReference: {fileID: 1354273372}
+    - target: {fileID: 2892871109823115544, guid: 18a91b1d65080074395c6f9eaec24461, type: 3}
+      propertyPath: quickCancelButton
       value: 
       objectReference: {fileID: 470825836}
     - target: {fileID: 2892871109823115545, guid: 18a91b1d65080074395c6f9eaec24461, type: 3}
