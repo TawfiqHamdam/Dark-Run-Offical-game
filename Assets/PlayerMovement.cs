@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask MovementMask;
     [SerializeField] float rotationSpeed = 10f;
     [SerializeField] float controllSpeed = 1f;
+    [SerializeField] float ShiftSpeed = 15f;
 
     [SerializeField] Transform rotationHelper;
 
@@ -36,6 +37,14 @@ public class PlayerMovement : MonoBehaviour
 
     private void Movement()
     {
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            controllSpeed = ShiftSpeed;
+        }
+        else
+        {
+            controllSpeed = 10;
+        }
         if (CrossPlatformInputManager.GetButton("Vertical"))
         {
             ZThrow = CrossPlatformInputManager.GetAxis("Vertical");
@@ -43,7 +52,7 @@ public class PlayerMovement : MonoBehaviour
             Vector3 zVectorOffset = zOffset * transform.forward;
             transform.localPosition = transform.localPosition + zVectorOffset;
         }
-        else if (CrossPlatformInputManager.GetButton("Horizontal"))
+        if (CrossPlatformInputManager.GetButton("Horizontal"))
         {
             XThrow = CrossPlatformInputManager.GetAxis("Horizontal");
             float xOffser = XThrow * controllSpeed * Time.deltaTime;
@@ -70,8 +79,8 @@ public class PlayerMovement : MonoBehaviour
         //rotationVec.z = 0;
         rotationVec.y += rotationX;
         rotationPlayer.y += rotationX;
-        print(xAxisClamp);
-        print(rotationPlayer.x);
+        //print(xAxisClamp);
+        //print(rotationPlayer.x);
         if(xAxisClamp > 90)
         {
             xAxisClamp = 90;
