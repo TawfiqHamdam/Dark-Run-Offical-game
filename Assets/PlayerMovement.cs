@@ -36,14 +36,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void Movement()
     {
-        if (Input.GetKey(KeyCode.LeftShift))
-        {
-            controllSpeed = ShiftSpeed;
-        }
-        else
-        {
-            controllSpeed = 10;
-        }
         if (CrossPlatformInputManager.GetButton("Vertical"))
         {
             ZThrow = CrossPlatformInputManager.GetAxis("Vertical");
