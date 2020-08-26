@@ -7,7 +7,6 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask MovementMask;
     [SerializeField] float rotationSpeed = 10f;
     [SerializeField] float controllSpeed = 1f;
-    [SerializeField] float ShiftSpeed = 15f;
 
     [SerializeField] Transform rotationHelper;
 
