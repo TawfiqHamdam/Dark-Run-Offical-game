@@ -17,4 +17,9 @@ public class PlayerMoter : MonoBehaviour{
     {
         Agent.SetDestination(point);
     }
+
+    public NavMeshAgent GetAgent()
+    {
+        return Agent;
+    }
 }

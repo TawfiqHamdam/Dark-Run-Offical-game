@@ -400,13 +400,37 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 4582459077324282224, guid: 15186d6af929d29458d80e8bb41d6bb9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4582459077324282227, guid: 15186d6af929d29458d80e8bb41d6bb9, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4582459077324282232, guid: 15186d6af929d29458d80e8bb41d6bb9, type: 3}
+      propertyPath: m_Radius
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4582459077324282232, guid: 15186d6af929d29458d80e8bb41d6bb9, type: 3}
+      propertyPath: m_Height
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4582459077324282232, guid: 15186d6af929d29458d80e8bb41d6bb9, type: 3}
+      propertyPath: m_BaseOffset
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4582459077324282236, guid: 15186d6af929d29458d80e8bb41d6bb9, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4582459077324282238, guid: 15186d6af929d29458d80e8bb41d6bb9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14.3747635
+      value: 14.45
       objectReference: {fileID: 0}
     - target: {fileID: 4582459077324282238, guid: 15186d6af929d29458d80e8bb41d6bb9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.46
+      value: 5.78
       objectReference: {fileID: 0}
     - target: {fileID: 4582459077324282238, guid: 15186d6af929d29458d80e8bb41d6bb9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -444,7 +468,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -3.13
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4582459077324282236, guid: 15186d6af929d29458d80e8bb41d6bb9, type: 3}
+    - {fileID: 4582459077324282227, guid: 15186d6af929d29458d80e8bb41d6bb9, type: 3}
+    - {fileID: 4582459077324282226, guid: 15186d6af929d29458d80e8bb41d6bb9, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 15186d6af929d29458d80e8bb41d6bb9, type: 3}
 --- !u!1001 &499657404
 PrefabInstance:
