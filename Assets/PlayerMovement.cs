@@ -52,7 +52,7 @@ public class PlayerMovement : MonoBehaviour
             Vector3 zVectorOffset = zOffset * transform.forward;
             transform.localPosition = transform.localPosition + zVectorOffset;
         }
-        if (CrossPlatformInputManager.GetButton("Horizontal"))
+        else if (CrossPlatformInputManager.GetButton("Horizontal"))
         {
             XThrow = CrossPlatformInputManager.GetAxis("Horizontal");
             float xOffser = XThrow * controllSpeed * Time.deltaTime;
