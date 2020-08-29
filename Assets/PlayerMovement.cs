@@ -62,7 +62,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if(tagToCheck == "floor" && isJumping)
         {
-            print("grounded");
+            //print("grounded");
             playerBody.GetComponent<Rigidbody>().isKinematic = true;
             isJumping = false;
         }
