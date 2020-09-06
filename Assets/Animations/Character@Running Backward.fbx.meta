@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: 9da387b23e9f42745ad0ccc1b7a69d05
+guid: 200c90837c9ee764fa6bb025e255ad14
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable:
   - first:
       74: -203655887218126122
-    second: Warrior Idle
+    second: Running Backward
   externalObjects: {}
   materials:
     materialImportMode: 1
@@ -35,11 +35,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Warrior Idle
+      name: Running Backward
       takeName: mixamo.com
       internalID: 0
       firstFrame: 0
-      lastFrame: 344
+      lastFrame: 19
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

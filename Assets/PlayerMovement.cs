@@ -7,8 +7,8 @@ public class PlayerMovement : MonoBehaviour
 {
     public LayerMask MovementMask;
     [SerializeField] float rotationSpeed = 10f;
-    [SerializeField] float controllSpeed = 1f;
-    [SerializeField] float ShiftSpeed = 15f;
+    [SerializeField] float controllSpeed = 10f;
+    [SerializeField] float ShiftSpeed = 20f;
 
     [SerializeField] Transform rotationHelper;
     //[SerializeField] GameObject playerBody;
@@ -44,7 +44,7 @@ public class PlayerMovement : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.Locked;
         Jump();
-        print(isJumping);
+        //print(isJumping);
         print(isSettingJump);
 
         animator.SetFloat("stateFloat", animState);
@@ -61,6 +61,7 @@ public class PlayerMovement : MonoBehaviour
             isSettingJump = true;
             StartCoroutine(SetJumpToTrue());//might not be needed. Will check later.
             animState = 2;
+            animator.SetBool("onTheAir", true);
         }
     }
 
@@ -78,27 +79,11 @@ public class PlayerMovement : MonoBehaviour
             //print("grounded");
             //playerBody.GetComponent<Rigidbody>().isKinematic = true;
             isJumping = false;
-            animState = 3;
+            animator.SetBool("onTheAir", false);
+            animState = 0;
         }
     }
 
-    /*
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.tag == "floor" && isJumping)
-        {
-            moter.GetAgent().enabled = true;
-            playerBody.GetComponent<Rigidbody>().isKinematic = true;
-            isJumping = false;
-        }
-    }
-    */
-
-    //public
-
-
-
-    // Update is called once per frame
     void FixedUpdate()
     {
         Movement();
@@ -107,38 +92,45 @@ public class PlayerMovement : MonoBehaviour
 
     private void Movement()
     {
+
+        ZThrow = CrossPlatformInputManager.GetAxisRaw("Vertical");
+        XThrow = CrossPlatformInputManager.GetAxisRaw("Horizontal");
+
+        float ZThrowAnim = CrossPlatformInputManager.GetAxis("Vertical");
+        float XThrowAnim = CrossPlatformInputManager.GetAxis("Horizontal");
+
+        float speed = 0f;
+
+        print(XThrowAnim);
+        print(XThrow);
         if (Input.GetKey(KeyCode.LeftShift))
         {
-            controllSpeed = ShiftSpeed;
+            speed = ShiftSpeed;
+            animator.SetFloat("xMovement", 2 * XThrowAnim);
+            animator.SetFloat("yMovement", 2 * ZThrowAnim);
         }
         else
         {
-            controllSpeed = 10;
+
+            animator.SetFloat("xMovement", XThrowAnim);
+            animator.SetFloat("yMovement", ZThrowAnim);
+            speed = controllSpeed;
         }
-        //if (CrossPlatformInputManager.GetButton("Vertical"))
-        //{
-            ZThrow = CrossPlatformInputManager.GetAxisRaw("Vertical");
-            float zOffset = ZThrow * controllSpeed * Time.deltaTime;
-            Vector3 zVectorOffset = zOffset * transform.forward * speedMultiplier;
-            GetComponent<Rigidbody>().AddForce(zVectorOffset, ForceMode.VelocityChange);
-            //GetComponent<Rigidbody>().velocity = zVectorOffset + new Vector3 (0, GetComponent<Rigidbody>().velocity.y, 0);
-            print(zVectorOffset);
-            //transform.localPosition = transform.localPosition + zVectorOffset;
-        //}
-        //if (CrossPlatformInputManager.GetButton("Horizontal"))
-        //{
-            XThrow = CrossPlatformInputManager.GetAxisRaw("Horizontal");
-            float xOffser = XThrow * controllSpeed * Time.deltaTime;
-            Vector3 xVectorOffset = xOffser * transform.right * speedMultiplier;
-            GetComponent<Rigidbody>().AddForce(xVectorOffset, ForceMode.VelocityChange);
-        //GetComponent<Rigidbody>().velocity = xVectorOffset + new Vector3(0, GetComponent<Rigidbody>().velocity.y, 0);
-        //transform.localPosition = transform.localPosition + xVectorOffset;
 
-        //}
-        print(GetComponent<Rigidbody>().velocity);
 
-        //adjust velocity
-        //compare the absolute value of that with the max allowed velocity (horizontal, not including jumps/ falling etc):
+        float zOffset = ZThrow * speed * Time.deltaTime;
+        Vector3 zVectorOffset = zOffset * transform.forward;// * speedMultiplier;
+        print(zVectorOffset);
+        //print("z" + ZThrow);
+        GetComponent<Rigidbody>().AddForce(zVectorOffset, ForceMode.VelocityChange);
+        //print(zVectorOffset);
+
+        float xOffser = XThrow * speed * Time.deltaTime;
+        //print(xOffser);
+        Vector3 xVectorOffset = xOffser * transform.right;// * speedMultiplier;
+        GetComponent<Rigidbody>().AddForce(xVectorOffset, ForceMode.VelocityChange);
+        //print(GetComponent<Rigidbody>().velocity);
+
         Vector3 horizontalMovement = new Vector3(GetComponent<Rigidbody>().velocity.x, 0, GetComponent<Rigidbody>().velocity.z);
         float velocityAbsoluteValue = horizontalMovement.magnitude;
         if (velocityAbsoluteValue > maxSpeed)
@@ -152,12 +144,12 @@ public class PlayerMovement : MonoBehaviour
 
         if (velocityAbsoluteValue > 0.05) //animation- check speed of animation.
         {
-            if (!isJumping && !isSettingJump)//animState < 1.9)
-            {
+            //if (!isJumping && !isSettingJump)//animState < 1.9)
+            //{
                 animState = 1;
-            }
+            //}
         }
-        else if (!isJumping && !isSettingJump)//animState < 1.9)
+        else// if (!isJumping && !isSettingJump)//animState < 1.9)
         {
             animState = 0;
         }
