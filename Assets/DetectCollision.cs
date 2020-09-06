@@ -22,6 +22,7 @@ public class DetectCollision : MonoBehaviour
     {
         string tag = collision.gameObject.tag;
         parentPlayer.GroundCheck(tag);
+        print("checking");
 
     }
 
