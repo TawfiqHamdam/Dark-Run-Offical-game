@@ -1234,7 +1234,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 15
+=======
+      value: 1
+>>>>>>> parent of b475304d... Textures to the player
 =======
       value: 1
 >>>>>>> parent of b475304d... Textures to the player
@@ -1261,6 +1265,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f8d3224762d5ff7419deef91e561eb31, type: 3}
+<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!1 &1535144378
 GameObject:
@@ -1357,6 +1362,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> parent of b475304d... Textures to the player
 =======
 >>>>>>> parent of b475304d... Textures to the player
 --- !u!1 &1581243881
