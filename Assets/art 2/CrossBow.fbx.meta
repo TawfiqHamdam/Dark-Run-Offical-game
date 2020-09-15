@@ -1,0 +1,536 @@
+fileFormatVersion: 2
+guid: 4baf96d3849157647926cdcb29477fe5
+ModelImporter:
+  serializedVersion: 20101
+  internalIDToNameTable:
+  - first:
+      74: 5845661472122215649
+    second: pCylinder1|MainPull|Take 001|BaseLayer
+  - first:
+      74: -3401034654542131349
+    second: pCylinder1|nurbsCircle1|Take 001|BaseLayer
+  - first:
+      74: -4862296972769021354
+    second: pCylinder1|nurbsCircle2|Take 001|BaseLayer
+  - first:
+      74: 8985277532089990438
+    second: pCylinder1|nurbsCircle5|Take 001|BaseLayer
+  - first:
+      74: 6406454138844451597
+    second: pCylinder1|nurbsCircle6|Take 001|BaseLayer
+  - first:
+      74: -5534401353768341694
+    second: pCylinder1|pCube29|Take 001|BaseLayer
+  - first:
+      74: 1934873222490813469
+    second: pCylinder1|pCube53|Take 001|BaseLayer
+  - first:
+      74: 6967946470106010175
+    second: pCylinder1|pCylinder16|Take 001|BaseLayer
+  - first:
+      74: -8310755539675105912
+    second: pCylinder1|pCylinder17|Take 001|BaseLayer
+  - first:
+      74: 7104402914940582372
+    second: pCylinder1|pCylinder1|Take 001|BaseLayer
+  - first:
+      74: 709756493314952896
+    second: pCylinder1|Trigger_Barrel1|Take 001|BaseLayer
+  - first:
+      74: 3961605027788647014
+    second: pCube29|MainPull|Take 001|BaseLayer
+  - first:
+      74: 1682140959752540163
+    second: pCube29|nurbsCircle1|Take 001|BaseLayer
+  - first:
+      74: 6257792747692158382
+    second: pCube29|nurbsCircle2|Take 001|BaseLayer
+  - first:
+      74: 5958530658742004901
+    second: pCube29|nurbsCircle5|Take 001|BaseLayer
+  - first:
+      74: -3261037940083275688
+    second: pCube29|nurbsCircle6|Take 001|BaseLayer
+  - first:
+      74: 202542084308672899
+    second: pCube29|pCube29|Take 001|BaseLayer
+  - first:
+      74: 3535474125171717223
+    second: pCube29|pCube53|Take 001|BaseLayer
+  - first:
+      74: -9117183828682083961
+    second: pCube29|pCylinder16|Take 001|BaseLayer
+  - first:
+      74: -3141530558687125165
+    second: pCube29|pCylinder17|Take 001|BaseLayer
+  - first:
+      74: -3709599904640626261
+    second: pCube29|pCylinder1|Take 001|BaseLayer
+  - first:
+      74: -55724947092099199
+    second: pCube29|Trigger_Barrel1|Take 001|BaseLayer
+  - first:
+      74: 3524567143509390597
+    second: Trigger_Barrel1|MainPull|Take 001|BaseLayer
+  - first:
+      74: -208271415909209172
+    second: Trigger_Barrel1|nurbsCircle1|Take 001|BaseLayer
+  - first:
+      74: -6404906137871846746
+    second: Trigger_Barrel1|nurbsCircle2|Take 001|BaseLayer
+  - first:
+      74: -9081193602428024901
+    second: Trigger_Barrel1|nurbsCircle5|Take 001|BaseLayer
+  - first:
+      74: -8463067490407590644
+    second: Trigger_Barrel1|nurbsCircle6|Take 001|BaseLayer
+  - first:
+      74: 1820146524247804448
+    second: Trigger_Barrel1|pCube29|Take 001|BaseLayer
+  - first:
+      74: -1715126249294583364
+    second: Trigger_Barrel1|pCube53|Take 001|BaseLayer
+  - first:
+      74: 7707233422258503751
+    second: Trigger_Barrel1|pCylinder16|Take 001|BaseLayer
+  - first:
+      74: -6290632467661556285
+    second: Trigger_Barrel1|pCylinder17|Take 001|BaseLayer
+  - first:
+      74: 1224635396536011676
+    second: Trigger_Barrel1|pCylinder1|Take 001|BaseLayer
+  - first:
+      74: -349649136952928390
+    second: Trigger_Barrel1|Trigger_Barrel1|Take 001|BaseLayer
+  - first:
+      74: -3358919997749158685
+    second: pCylinder16|MainPull|Take 001|BaseLayer
+  - first:
+      74: -8499256167869041359
+    second: pCylinder16|nurbsCircle1|Take 001|BaseLayer
+  - first:
+      74: 7811394863764990828
+    second: pCylinder16|nurbsCircle2|Take 001|BaseLayer
+  - first:
+      74: 8198441509416991154
+    second: pCylinder16|nurbsCircle5|Take 001|BaseLayer
+  - first:
+      74: 3792789641137673406
+    second: pCylinder16|nurbsCircle6|Take 001|BaseLayer
+  - first:
+      74: -4346083570759212650
+    second: pCylinder16|pCube29|Take 001|BaseLayer
+  - first:
+      74: -2128770222722155485
+    second: pCylinder16|pCube53|Take 001|BaseLayer
+  - first:
+      74: -4578210141985491396
+    second: pCylinder16|pCylinder16|Take 001|BaseLayer
+  - first:
+      74: 3674965818215612787
+    second: pCylinder16|pCylinder17|Take 001|BaseLayer
+  - first:
+      74: 2280786491008428709
+    second: pCylinder16|pCylinder1|Take 001|BaseLayer
+  - first:
+      74: -8047810867313894646
+    second: pCylinder16|Trigger_Barrel1|Take 001|BaseLayer
+  - first:
+      74: -5214644559562053869
+    second: pCylinder17|MainPull|Take 001|BaseLayer
+  - first:
+      74: 9009275044434986721
+    second: pCylinder17|nurbsCircle1|Take 001|BaseLayer
+  - first:
+      74: -6126638573443650798
+    second: pCylinder17|nurbsCircle2|Take 001|BaseLayer
+  - first:
+      74: -5107201379914398216
+    second: pCylinder17|nurbsCircle5|Take 001|BaseLayer
+  - first:
+      74: 3614063607934597708
+    second: pCylinder17|nurbsCircle6|Take 001|BaseLayer
+  - first:
+      74: 8590073606609110555
+    second: pCylinder17|pCube29|Take 001|BaseLayer
+  - first:
+      74: -3551349155553382251
+    second: pCylinder17|pCube53|Take 001|BaseLayer
+  - first:
+      74: 1310375561060997576
+    second: pCylinder17|pCylinder16|Take 001|BaseLayer
+  - first:
+      74: 7060317803173149504
+    second: pCylinder17|pCylinder17|Take 001|BaseLayer
+  - first:
+      74: -7657200159369653025
+    second: pCylinder17|pCylinder1|Take 001|BaseLayer
+  - first:
+      74: -2886674477071451107
+    second: pCylinder17|Trigger_Barrel1|Take 001|BaseLayer
+  - first:
+      74: -3225010294545081248
+    second: group2|group2|Take 001|BaseLayer
+  - first:
+      74: 7465190001376765078
+    second: group2|MainPull|Take 001|BaseLayer
+  - first:
+      74: -5792908936792971727
+    second: group2|nurbsCircle1|Take 001|BaseLayer
+  - first:
+      74: 3860372273469580003
+    second: group2|nurbsCircle2|Take 001|BaseLayer
+  - first:
+      74: 1919624404073749387
+    second: group2|nurbsCircle5|Take 001|BaseLayer
+  - first:
+      74: -5998598494309842864
+    second: group2|nurbsCircle6|Take 001|BaseLayer
+  - first:
+      74: -191228730873969627
+    second: group2|pCube29|Take 001|BaseLayer
+  - first:
+      74: 7995175073865604390
+    second: group2|pCube53|Take 001|BaseLayer
+  - first:
+      74: 190930132077331605
+    second: group2|pCylinder16|Take 001|BaseLayer
+  - first:
+      74: -1509199533476551742
+    second: group2|pCylinder17|Take 001|BaseLayer
+  - first:
+      74: -4092247992110904115
+    second: group2|pCylinder1|Take 001|BaseLayer
+  - first:
+      74: -7625648161132469468
+    second: group2|Trigger_Barrel1|Take 001|BaseLayer
+  - first:
+      74: 1293459224482406537
+    second: MainPull|MainPull|Take 001|BaseLayer
+  - first:
+      74: 3332323981440494019
+    second: MainPull|nurbsCircle1|Take 001|BaseLayer
+  - first:
+      74: -3247164614528900174
+    second: MainPull|nurbsCircle2|Take 001|BaseLayer
+  - first:
+      74: 6461882725106412416
+    second: MainPull|nurbsCircle5|Take 001|BaseLayer
+  - first:
+      74: 558854482477378692
+    second: MainPull|nurbsCircle6|Take 001|BaseLayer
+  - first:
+      74: 3642801171722364529
+    second: MainPull|pCube29|Take 001|BaseLayer
+  - first:
+      74: -1789641740083824292
+    second: MainPull|pCube53|Take 001|BaseLayer
+  - first:
+      74: -3981165863030004788
+    second: MainPull|pCylinder16|Take 001|BaseLayer
+  - first:
+      74: 7867322503962519468
+    second: MainPull|pCylinder17|Take 001|BaseLayer
+  - first:
+      74: -7525668083357433257
+    second: MainPull|pCylinder1|Take 001|BaseLayer
+  - first:
+      74: 8207696546179743003
+    second: MainPull|Trigger_Barrel1|Take 001|BaseLayer
+  - first:
+      74: -8415320188702960710
+    second: nurbsCircle1|MainPull|Take 001|BaseLayer
+  - first:
+      74: 9038187383696534016
+    second: nurbsCircle1|nurbsCircle1|Take 001|BaseLayer
+  - first:
+      74: -4966452646759987196
+    second: nurbsCircle1|nurbsCircle2|Take 001|BaseLayer
+  - first:
+      74: -6490296413337101349
+    second: nurbsCircle1|nurbsCircle5|Take 001|BaseLayer
+  - first:
+      74: -1008158383783246989
+    second: nurbsCircle1|nurbsCircle6|Take 001|BaseLayer
+  - first:
+      74: 8439778953967160679
+    second: nurbsCircle1|pCube29|Take 001|BaseLayer
+  - first:
+      74: 152009931055443431
+    second: nurbsCircle1|pCube53|Take 001|BaseLayer
+  - first:
+      74: -7270000302723476446
+    second: nurbsCircle1|pCylinder16|Take 001|BaseLayer
+  - first:
+      74: -5402580420047635603
+    second: nurbsCircle1|pCylinder17|Take 001|BaseLayer
+  - first:
+      74: 397403509821614294
+    second: nurbsCircle1|pCylinder1|Take 001|BaseLayer
+  - first:
+      74: 2985940389107395471
+    second: nurbsCircle1|Trigger_Barrel1|Take 001|BaseLayer
+  - first:
+      74: -2255833907287851952
+    second: nurbsCircle2|MainPull|Take 001|BaseLayer
+  - first:
+      74: -228303058038082676
+    second: nurbsCircle2|nurbsCircle1|Take 001|BaseLayer
+  - first:
+      74: -8077827869210799398
+    second: nurbsCircle2|nurbsCircle2|Take 001|BaseLayer
+  - first:
+      74: -7836030589608874628
+    second: nurbsCircle2|nurbsCircle5|Take 001|BaseLayer
+  - first:
+      74: -6435683224799056337
+    second: nurbsCircle2|nurbsCircle6|Take 001|BaseLayer
+  - first:
+      74: 7709658008575304298
+    second: nurbsCircle2|pCube29|Take 001|BaseLayer
+  - first:
+      74: 5788651221189761812
+    second: nurbsCircle2|pCube53|Take 001|BaseLayer
+  - first:
+      74: 3709511318397437214
+    second: nurbsCircle2|pCylinder16|Take 001|BaseLayer
+  - first:
+      74: 1533615434651172138
+    second: nurbsCircle2|pCylinder17|Take 001|BaseLayer
+  - first:
+      74: -8169837460482995917
+    second: nurbsCircle2|pCylinder1|Take 001|BaseLayer
+  - first:
+      74: -1349142147370036921
+    second: nurbsCircle2|Trigger_Barrel1|Take 001|BaseLayer
+  - first:
+      74: -2265924071353122308
+    second: nurbsCircle5|MainPull|Take 001|BaseLayer
+  - first:
+      74: -6127277475048476941
+    second: nurbsCircle5|nurbsCircle1|Take 001|BaseLayer
+  - first:
+      74: -7272367988902117889
+    second: nurbsCircle5|nurbsCircle2|Take 001|BaseLayer
+  - first:
+      74: -3908816239495683927
+    second: nurbsCircle5|nurbsCircle5|Take 001|BaseLayer
+  - first:
+      74: -1901004373956890750
+    second: nurbsCircle5|nurbsCircle6|Take 001|BaseLayer
+  - first:
+      74: 8130473486608800331
+    second: nurbsCircle5|pCube29|Take 001|BaseLayer
+  - first:
+      74: 8608645504886160714
+    second: nurbsCircle5|pCube53|Take 001|BaseLayer
+  - first:
+      74: -8046482040621825249
+    second: nurbsCircle5|pCylinder16|Take 001|BaseLayer
+  - first:
+      74: -7121933594241376243
+    second: nurbsCircle5|pCylinder17|Take 001|BaseLayer
+  - first:
+      74: -4843813103853122756
+    second: nurbsCircle5|pCylinder1|Take 001|BaseLayer
+  - first:
+      74: 7238690264015514181
+    second: nurbsCircle5|Trigger_Barrel1|Take 001|BaseLayer
+  - first:
+      74: -1422179353651236488
+    second: nurbsCircle6|MainPull|Take 001|BaseLayer
+  - first:
+      74: 7453578935507601225
+    second: nurbsCircle6|nurbsCircle1|Take 001|BaseLayer
+  - first:
+      74: 819151434921465155
+    second: nurbsCircle6|nurbsCircle2|Take 001|BaseLayer
+  - first:
+      74: 321380679537995720
+    second: nurbsCircle6|nurbsCircle5|Take 001|BaseLayer
+  - first:
+      74: 5544648603214814497
+    second: nurbsCircle6|nurbsCircle6|Take 001|BaseLayer
+  - first:
+      74: -3833686469013696170
+    second: nurbsCircle6|pCube29|Take 001|BaseLayer
+  - first:
+      74: 1003569858954313121
+    second: nurbsCircle6|pCube53|Take 001|BaseLayer
+  - first:
+      74: -4132781033345555694
+    second: nurbsCircle6|pCylinder16|Take 001|BaseLayer
+  - first:
+      74: -8347587445151365443
+    second: nurbsCircle6|pCylinder17|Take 001|BaseLayer
+  - first:
+      74: -5815026436922597361
+    second: nurbsCircle6|pCylinder1|Take 001|BaseLayer
+  - first:
+      74: 2751864533021325784
+    second: nurbsCircle6|Trigger_Barrel1|Take 001|BaseLayer
+  - first:
+      74: -5556842721315883629
+    second: pCube53|MainPull|Take 001|BaseLayer
+  - first:
+      74: 5099282430323783320
+    second: pCube53|nurbsCircle1|Take 001|BaseLayer
+  - first:
+      74: -7659669070762465414
+    second: pCube53|nurbsCircle2|Take 001|BaseLayer
+  - first:
+      74: 8762105146153578162
+    second: pCube53|nurbsCircle5|Take 001|BaseLayer
+  - first:
+      74: -5204345578482819441
+    second: pCube53|nurbsCircle6|Take 001|BaseLayer
+  - first:
+      74: -6990724016262538830
+    second: pCube53|pCube29|Take 001|BaseLayer
+  - first:
+      74: 8964192481855067940
+    second: pCube53|pCube53|Take 001|BaseLayer
+  - first:
+      74: 1348431089696575552
+    second: pCube53|pCylinder16|Take 001|BaseLayer
+  - first:
+      74: 8481137631619870006
+    second: pCube53|pCylinder17|Take 001|BaseLayer
+  - first:
+      74: -7167743624842456360
+    second: pCube53|pCylinder1|Take 001|BaseLayer
+  - first:
+      74: 4813998378400372093
+    second: pCube53|Trigger_Barrel1|Take 001|BaseLayer
+  - first:
+      74: 5862543501114407046
+    second: Armature|Armature|Take 001|BaseLayer
+  - first:
+      74: 3133734642012052396
+    second: Armature|MainPull|Take 001|BaseLayer
+  - first:
+      74: -9175144044319604688
+    second: Armature|nurbsCircle1|Take 001|BaseLayer
+  - first:
+      74: -6406985008054106394
+    second: Armature|nurbsCircle2|Take 001|BaseLayer
+  - first:
+      74: 3015846939445555330
+    second: Armature|nurbsCircle5|Take 001|BaseLayer
+  - first:
+      74: -6144713428418252734
+    second: Armature|nurbsCircle6|Take 001|BaseLayer
+  - first:
+      74: -3379053594590646822
+    second: Armature|pCube29|Take 001|BaseLayer
+  - first:
+      74: 8686958594610264895
+    second: Armature|pCube53|Take 001|BaseLayer
+  - first:
+      74: -747389421345500921
+    second: Armature|pCylinder16|Take 001|BaseLayer
+  - first:
+      74: 6583291835877886051
+    second: Armature|pCylinder17|Take 001|BaseLayer
+  - first:
+      74: 7242481012981581738
+    second: Armature|pCylinder1|Take 001|BaseLayer
+  - first:
+      74: -22205309675067267
+    second: Armature|Trigger_Barrel1|Take 001|BaseLayer
+  externalObjects: {}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 1
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 1
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
