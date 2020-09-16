@@ -802,7 +802,6 @@ GameObject:
   m_Component:
   - component: {fileID: 721788652}
   - component: {fileID: 721788654}
-  - component: {fileID: 721788653}
   m_Layer: 5
   m_Name: HealthBar
   m_TagString: Untagged
@@ -825,23 +824,11 @@ RectTransform:
   m_Father: {fileID: 191851055}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -243.1, y: -128}
-  m_SizeDelta: {x: 281.98718, y: 50.040596}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &721788653
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 721788651}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b580365de2ef9745bbcfb9933f42bfc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 140.99359, y: 50.04059}
+  m_SizeDelta: {x: 281.98718, y: 50.04059}
+  m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &721788654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1363,6 +1350,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1196232517569092963, guid: 15186d6af929d29458d80e8bb41d6bb9, type: 3}
+      propertyPath: controllSpeed
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 1196232517569092963, guid: 15186d6af929d29458d80e8bb41d6bb9, type: 3}
+      propertyPath: ShiftSpeed
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 1196232517569092966, guid: 15186d6af929d29458d80e8bb41d6bb9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 30.6
