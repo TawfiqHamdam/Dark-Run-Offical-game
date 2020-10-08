@@ -13,14 +13,14 @@ namespace Photon.Pun
 {
     using UnityEngine;
 
-    //something is wrong with the rigidbody
+
     [RequireComponent(typeof(Rigidbody2D))]
     [AddComponentMenu("Photon Networking/Photon Rigidbody 2D View")]
     public class PhotonRigidbody2DView : MonoBehaviourPun, IPunObservable
     {
         private float m_Distance;
         private float m_Angle;
-        //something is wrong with the rigidbody
+
         private Rigidbody2D m_Body;
 
         private Vector2 m_NetworkPosition;
@@ -39,7 +39,6 @@ namespace Photon.Pun
 
         public void Awake()
         {
-            //something is wrong with the rigidbody
             this.m_Body = GetComponent<Rigidbody2D>();
 
             this.m_NetworkPosition = new Vector2();
